@@ -4,7 +4,7 @@ node {
 	  } 
 	  stage ( ' Build ') {
 	   docker.image ( ' trion /ng−cli' ).inside {
-	    sh 'npm i n s t a l l'
+	    sh 'npm install'
 	    sh 'ng build −−progress false −−prod −−aot '
 	    sh 'tar −cvzf dist . tar . gz −−strip−components=1 dist' 
 	    }
